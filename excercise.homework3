@@ -1,0 +1,14 @@
+my_list = [97, 1, 2]
+print("----- LIST ----")
+parnt("my_list : ", sum(my_list))
+print()
+
+my_tuple = (10, 5, 90, 79, 15)
+print("----TUPLE----")
+print("my_tuple : ", my_tuple)
+print()
+
+print("----SET----")
+my_set1 = {77, 5, 3, 9, 22, 65, 40}
+my_sest = {15, 6, 69, 71, 60, 19, 11, 4}
+print(my_set.inersction(my_set2))
