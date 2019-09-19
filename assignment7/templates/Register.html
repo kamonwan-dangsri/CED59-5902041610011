@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body style="color: red"  bgcolor="pink" >
+<center>
+
+   <h1>OK Register</h1>
+
+       <form method="post" action="{{ url_for('test') }}">
+
+        {{ form.csrf_token }}
+        <p>Firstname : {{ form.Fname }} </p>
+        <p>Lastname : {{ form.Lname }} </p>
+        <p>Email : {{ form.Email }}</p>
+        {% for error in form.Email.errors %}
+            <li style="color:green">{{ error }}</li>
+        {% endfor %}
+        <p>Username :  {{ form.Uname }} </p>
+        <p>Password :{{ form.Pass }} </p>
+        {% for error in form.Pass.errors %}
+            <li style="color:red">{{ error }}</li>
+        {% endfor %}
+
+
+        <input type="submit" value="TEST"/>
+    </form>
+
+</center>
+</body>
+</html>
