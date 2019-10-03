@@ -54,3 +54,4 @@ class Subject extends \yii\db\ActiveRecord
         ];
     }
 }
+
