@@ -17,7 +17,7 @@ class Subject extends \common\models\Subject {
     public function rules() {
         return [
             ['name', 'required', 'message' => 'please insert data'],
-            ['name', 'email', 'message' => 'please insert type example@email.com']
+            ['name', 'email', 'message' => 'example@email.com']
         ];
     }
 }
